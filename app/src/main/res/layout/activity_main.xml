@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.example.patil.todolist.MainActivity"
+    android:elevation="12dp"
+    android:fadeScrollbars="false">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/floatingActionButton"
+        android:onClick="onAddClick"
+        app:elevation="24dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:tint="#ffffff"
+        android:layout_above="@+id/viewTask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp"
+        android:background="@drawable/activity1" />
+
+    <Button
+        android:text="View Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewTask"
+        android:onClick="onTaskClick "
+        android:layout_marginBottom="91dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_action_name"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="66dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:layout_above="@+id/viewTask"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp" />
+
+
+</RelativeLayout>
